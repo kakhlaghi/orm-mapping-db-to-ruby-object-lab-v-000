@@ -67,5 +67,7 @@ class Student
     sql = <<-SQL
     SELECT name FROM students WHERE grade = 9
     SQL
+    DB[:conn].execute(sql)
+
   end
 end
